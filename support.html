@@ -53,6 +53,24 @@
       color: var(--muted);
       font-size: 14px;
     }
+    .resource-list {
+      display: grid;
+      gap: 10px;
+      padding-left: 0;
+      list-style: none;
+    }
+    .resource-list li {
+      border: 1px solid var(--border);
+      border-radius: 12px;
+      padding: 12px 14px;
+      background: #fbfdfb;
+    }
+    .resource-list span {
+      display: block;
+      color: var(--muted);
+      font-size: 14px;
+      margin-top: 2px;
+    }
   </style>
 </head>
 <body>
@@ -76,11 +94,30 @@
       <h2>Important safety note</h2>
       <p>I Am DrugFree is not emergency help, medical care, detox support, or therapy. If you are in immediate danger, in withdrawal, or at risk of harming yourself, contact local emergency services or a qualified professional immediately.</p>
 
-      <h2>External support resources</h2>
-      <ul>
-        <li><a href="https://www.samhsa.gov/find-support">SAMHSA Find Support</a></li>
-        <li><a href="https://findtreatment.gov/">FindTreatment.gov</a></li>
-        <li><a href="https://988lifeline.org/">988 Lifeline</a></li>
+      <h2>Crisis, treatment, and recovery support</h2>
+      <ul class="resource-list">
+        <li><a href="https://988lifeline.org/">988 Lifeline</a><span>Call, text, or chat if you are in crisis or at risk of harming yourself.</span></li>
+        <li><a href="https://www.samhsa.gov/find-support">SAMHSA Find Support</a><span>US substance use, recovery, and mental health support resources.</span></li>
+        <li><a href="https://findtreatment.gov/">FindTreatment.gov</a><span>US treatment locator for substance use and mental health care.</span></li>
+      </ul>
+
+      <h2>Peer and family support groups</h2>
+      <ul class="resource-list">
+        <li><a href="https://www.aa.org/">Alcoholics Anonymous</a><span>Alcohol recovery meetings and newcomer resources.</span></li>
+        <li><a href="https://na.org/">Narcotics Anonymous</a><span>Drug recovery meetings and fellowship resources.</span></li>
+        <li><a href="https://al-anon.org/">Al-Anon Family Groups</a><span>Support for families and friends affected by alcohol use.</span></li>
+      </ul>
+
+      <h2>Gambling support</h2>
+      <ul class="resource-list">
+        <li><a href="https://gamblersanonymous.org/find-a-meeting/">Gamblers Anonymous</a><span>Problem gambling recovery meetings.</span></li>
+        <li><a href="https://www.ncpgambling.org/help-treatment/">National Council on Problem Gambling</a><span>Problem gambling helpline and treatment resources.</span></li>
+      </ul>
+
+      <h2>Nicotine support</h2>
+      <ul class="resource-list">
+        <li><a href="https://smokefree.gov/">Smokefree.gov</a><span>Quit smoking, vaping, and nicotine support.</span></li>
+        <li><a href="https://www.cdc.gov/tobacco/campaign/tips/quit-smoking/">CDC quit smoking resources</a><span>Evidence-based quit smoking guidance and tools.</span></li>
       </ul>
 
       <h2>Legal</h2>
